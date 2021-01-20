@@ -63,7 +63,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect("localhost:5000");
+const socket = io.connect("https://video-app1235.herokuapp.com/");
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);
